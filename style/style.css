@@ -1,10 +1,20 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Karla', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'DM Serif Display', serif;
 }
 
 .container{
@@ -149,4 +159,70 @@ p{
     right: 0;
     z-index: 2;
     top: 0;
+}
+
+/*different section*/
+
+#different{
+    padding-top: 350px;
+}
+
+.difTitle{
+    font-weight: 400;
+    color: #302e33;
+    font-size: 50px;
+    position: relative;
+}
+
+.difTitle::before{
+    content: '';
+    background-color: #b0a4b2;
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+.difWrapper{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.dif h4{
+    font-size: 26px;
+    font-weight: 400;
+    margin: 20px 0;
+    color: #000;
+}
+
+.dif{
+    width: 33%;
+    min-width: 250px;
+    margin-top: 40px;
+    margin-right: 20px;
+    line-height: 1.4em;
+    color: #777779;
+}
+
+.dif:last-child{
+    margin-right: 0;
+    flex: 1;
+    padding-right: 0;
+}
+
+@media (max-width: 892px){
+    .dif{
+        width: 47%;
+    }
+
+}
+
+@media (max-width: 560px){
+    .dif{
+        width: 100%;
+        text-align: center;
+    }
 }
