@@ -235,6 +235,10 @@ p{
 
 /*how we work sec*/
 
+#howWeWork{
+    margin-bottom: 128px;
+}
+
 #howWeWork .container{
     background-color: #2c2640;
     flex-wrap: wrap;
@@ -268,6 +272,7 @@ p{
     background-color: #2c2640;
 }
 
+
 @media (max-width: 771px){
     #howWeWork .container{
         background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
@@ -286,4 +291,35 @@ p{
     #howWeWork h1{
         font-size: 58px;
     }
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #fafafa;
+    padding: 64px 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+
+}
+
+footer .footerTop{
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #d9d9d9;
+    align-items: center;
+}
+
+.icons a{
+    margin-left: 8px;
+}
+
+.icons a img{
+    transition: 0.3s;
+}
+
+.icons a:hover img{
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(353deg) brightness(0%) contrast(114%);
 }
