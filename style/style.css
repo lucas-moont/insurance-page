@@ -297,7 +297,7 @@ p{
 
 footer{
     background-color: #fafafa;
-    padding: 64px 0;
+    padding: 64px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,7 +337,7 @@ footer h5{
     color: #919191;
     font-size: 16px;
     letter-spacing: 2px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .footerBottom a{
@@ -356,4 +356,21 @@ footer h5{
 
 .footerBottom a:hover{
     border-bottom: 2px solid #3d3b46;
+}
+
+@media (max-width: 768px){
+    footer .footerBottom{
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 0;
+    }
+
+    .footerBottom div{
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 430px){
+    footer .footerBottom{
+        grid-template-columns: 1fr;
+    }
 }
