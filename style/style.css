@@ -478,8 +478,28 @@ footer h5{
 /*MENU MOBILE*/
 
 @media (max-width: 763px){
-    .menu{
-        display: none;
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        background-color: #FFF;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 360px;
+    }
+
+    .menu ul li{
+        padding: 8px 0;
+    }
+
+    .hButton{
+        padding: 8px 0 2px;
+        border: 0;
+        border-bottom: 1px solid #2a2a2a;
+        font-weight: bold;
     }
 
     .mMobile{
