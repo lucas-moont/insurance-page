@@ -85,7 +85,15 @@ header ul a:hover{
     color: #FFF;
 }
 
+.menu{
+    transition: 0.5s;
+}
+
 .mMobile{
+    display: none;
+}
+
+.closeBtn{
     display: none;
 }
 
@@ -478,17 +486,45 @@ footer h5{
 /*MENU MOBILE*/
 
 @media (max-width: 763px){
-    .menu ul{
-        display: flex;
-        flex-direction: column;
+    .menu{
         position: absolute;
-        height: 100vh;
-        background-color: #FFF;
-        z-index: 200;
         top: 0;
         left: 0;
         width: 100vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 200;
+        height: 100vh;
+
+    }
+
+    .closeBtn{
+        display: inline;
+        background-color: transparent;
+        color: #2c2640;
+        border: 0;
+        font-size: 40px;
+        position: absolute;
+        right: 16px;
+        transition: 0.5s
+    }
+
+    .closeBtn:hover{
+        color: rgb(197, 0, 0);
+        transform: rotate(360deg);
+    }
+
+    .menu nav{
+        height: 100%;
+        background-color: #FFF;
+        width: 100vw;
         max-width: 360px;
+        position: relative;
+    }
+
+    .menu ul{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
     }
 
     .menu ul li{
