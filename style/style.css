@@ -345,17 +345,17 @@ p{
 
 #howWeWork{
     margin-bottom: 128px;
-}
-
-#howWeWork .container{
     background-color: #2c2640;
-    flex-wrap: wrap;
-    padding: 70px;
-    color: #FFF;
     background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+}
+
+#howWeWork .container{
+    flex-wrap: wrap;
+    padding: 70px;
+    color: #FFF;
 }
 
 #howWeWork .container div{
@@ -382,7 +382,7 @@ p{
 
 
 @media (max-width: 771px){
-    #howWeWork .container{
+    #howWeWork{
         background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
     }
 
@@ -489,7 +489,7 @@ footer h5{
     .menu{
         position: absolute;
         top: 0;
-        left: 0;
+        left: -100vw;
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 200;
@@ -505,7 +505,8 @@ footer h5{
         font-size: 40px;
         position: absolute;
         right: 16px;
-        transition: 0.5s
+        transition: 0.5s;
+        z-index: 1000;
     }
 
     .closeBtn:hover{
@@ -517,7 +518,7 @@ footer h5{
         height: 100%;
         background-color: #FFF;
         width: 100vw;
-        max-width: 360px;
+        max-width: 375px;
         position: relative;
     }
 

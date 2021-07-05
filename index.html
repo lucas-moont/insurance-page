@@ -36,6 +36,7 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -46,7 +47,7 @@
         <div class="menu">
           <nav>
             <!--FAZER BOTÃO PARA FECHAR NO MOBILE-->
-            <button class='closeBtn'>X</button>
+            <button class='closeBtn' onclick='closeMenu()'>X</button>
             <ul>
               <li><a href="#">How we work</a></li>
               <li><a href="#">Blog</a></li>
@@ -56,7 +57,7 @@
           </nav>
         </div>
         <div class='mMobile'>
-          <button>
+          <button onclick='openMenu()'>
             <span></span>
             <span></span>
             <span></span>
@@ -169,5 +170,8 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://www.linkedin.com/in/lucas-monteiro-649301143/" target='_blank'>Luks Monteiro</a>.
     </div>
+    <script src='scripts/menu.js'>
+
+    </script>
   </body>
 </html>
